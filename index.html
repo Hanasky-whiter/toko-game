@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Digital Game - Akun Game, Joki, Top Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Digital Game</h1>
+        <nav>
+            <a href="#akun-game">Akun Game</a>
+            <a href="#joki-game">Joki Game</a>
+            <a href="#top-up">Top Up</a>
+        </nav>
+    </header>
+
+    <section id="akun-game" class="product-section">
+        <h2>Akun Game</h2>
+        <div id="akun-game-products" class="products">
+            <!-- Products will be loaded here -->
+        </div>
+    </section>
+
+    <section id="joki-game" class="product-section">
+        <h2>Joki Game</h2>
+        <div id="joki-game-products" class="products">
+            <!-- Products will be loaded here -->
+        </div>
+    </section>
+
+    <section id="top-up" class="product-section">
+        <h2>Top Up</h2>
+        <div id="top-up-products" class="products">
+            <!-- Products will be loaded here -->
+        </div>
+    </section>
+
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Pesan Produk</h2>
+            <p id="product-info"></p>
+            <form id="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="phone">Nomor HP:</label>
+                <input type="tel" id="phone" required>
+                <label for="message">Pesan Tambahan:</label>
+                <textarea id="message"></textarea>
+                <button type="submit">Kirim Pesanan</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
